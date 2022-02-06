@@ -1,0 +1,248 @@
+html{
+    font-size: 16px;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px 0;
+} 
+
+
+/* Nav */
+.header{
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 85px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-brand{
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Cabin', sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.nav{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li a{
+    padding: 2rem .8rem;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: ease-in 5ms;
+}
+
+.nav li a:hover{
+    color:#7A1FAB;
+    transition: ease-out 2ms;
+} 
+
+/* Hero */
+.hero{
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    margin-top: 85px;
+    padding: 8rem 0;
+}
+
+.hero::before{
+    content:"";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+} 
+
+.hero .container{
+    
+    z-index: 2;
+    position: relative;
+}
+
+.hero__heading{
+    font-size: 3rem;
+    font-family: 'Cabin';
+}
+
+.hero__heading > span{
+    color: #7A1FAB;
+    text-transform: uppercase;
+}
+
+.hero__description{
+    font-size: 1.2rem;
+    max-width: 60ch;
+}
+
+/* Paintings */
+.paintings{
+    padding: 4.7rem 2rem;
+}
+
+.paintings__heading{
+    font-family: 'Cabin';
+    color: #27AB67;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.paintings .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.painting{
+    flex: 1 1 30%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0.7em;
+    box-shadow: 0px 0px 1px 3px rgba(248, 248, 248, 0.4);
+    margin: 0.8rem;
+    transition: .5s;
+}
+
+.painting:hover{
+    box-shadow: 0px 0px 2px 15px rgba(248, 248, 248, 0.4);
+    transition: .3s;
+}
+
+.painting__img{
+    width: 100%;
+    min-width: 200px;
+    border-radius: 8px;
+}
+
+.painting__content{
+    padding: .6em 0;
+    text-align: center;
+}
+
+.painting__title{
+    color: #7A1FAB;
+    font-family: 'Cabin';
+}
+
+.artists{
+    background-color: #27AB67;
+    padding: 4.7rem 2rem;
+    text-align: center;
+}
+
+.artists__heading{
+    text-align: center;
+    color: #fff;
+    font-family: 'Cabin';
+    font-size: 2rem;
+}
+
+.artists__description{
+    text-align: center;
+    color: #fff;
+    max-width: 75ch;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+
+.artists .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.artist{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: .8em;
+    margin: 1rem;
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.artist__img{
+    width: 100%;
+}
+
+.artist__name{
+    color: #7A1FAB;
+    font-family: 'Cabin';
+}
+
+.contacts{
+    padding: 4.7rem 0;
+}
+
+.contacts .flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contancts__info{
+    padding: 2em;
+}
+
+.contacts_heading{
+    font-family: 'Cabin';
+    font-size: 1.8rem;
+}
+
+.contacts__img{
+    width: 100%;
+}
+.contacts__description{
+}
+
+.contacts .col{
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px){
+    .contacts .col{
+        width: 100%;
+    }
+}
+
+/* Footer */
+.footer{
+    background-color: darkslategray;
+    color: #fff;
+    padding: 1.2em 0;
+    text-align: center;
+}
+
+.footer__text{
+    font-size: .8rem;
+}
