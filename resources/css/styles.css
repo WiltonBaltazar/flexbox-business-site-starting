@@ -51,6 +51,17 @@ body{
     padding: 0;
 }
 
+@media only screen and (max-width: 414px){
+    .header{
+        padding: 2rem 0;
+    }
+    .nav{
+        display: none;
+    }
+    .logo-brand{
+        font-size: 1rem;
+    }
+}
 .nav li a{
     padding: 2rem .8rem;
     text-decoration: none;
